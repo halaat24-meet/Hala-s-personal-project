@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<style>
+      body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e0f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('blue-background.jpg'); /* Optional background image */
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.question-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border: 1px solid #0277bd;
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+}
+
+
+.question-title {
+    font-size: 24px;
+    color: #01579b;
+    margin-bottom: 20px;
+    display: block;
+    font-weight: bold;
+
+}
+
+.Headerbutton {
+    margin: 10px 0;
+}
+
+.Headerbutton{
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: none;
+    background-color: #0277bd;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s, transform 0.3s;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.Headerbutton:hover {
+    background-color: #0288d1;
+    transform: translateY(-2px);
+}
+</style>
+<body>
+     <div class="question-container">
+
+        <form method="POST" action="/correct" class="question-title">
+        <label>Acid turns blue litmus paper into which color?</label>
+        <button class="Headerbutton" name="submit" type="submit" value="HTML">red</button>
+        </form>
+
+    
+        <form method="POST" action="/wrong">
+        <button class="Headerbutton" name="submit" type="submit" value="HTML">blue</button>
+        </form>
+
+
+        <form method="POST" action="/wrong">
+        <button class="Headerbutton" name="submit" type="submit" value="HTML">orange</button>
+        </form>
+
+
+
+        <form method="POST" action="/wrong">
+        <button class="Headerbutton" name="submit" type="submit" value="HTML">pink</button>
+        </form>
+
+        <form method="POST" action="/question5">
+        <button class="Headerbutton" name="submit" type="submit" value="HTML">Continue</button>
+        </form>
+
+</body>
+</html>

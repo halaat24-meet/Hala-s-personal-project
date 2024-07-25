@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign In</title>
+</head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e6f2ff; /* Light blue background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #ffffff; /* White background for content */
+    border: 1px solid #b3d9ff; /* Light blue border */
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h1 {
+    color: #00509e; /* Dark blue color for the heading */
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    color: #00509e; /* Dark blue color for labels */
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: calc(100% - 20px); /* Full width inputs */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #b3d9ff; /* Light blue border */
+    border-radius: 8px;
+    box-sizing: border-box; /* Include padding and border in width calculation */
+}
+
+button {
+    background-color: #007bff; /* Bright blue button color */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05);
+}
+
+</style>
+<body>
+    <div class="container">
+        <form method="POST" action="/signin">
+        <h1 style="text-align: center;">SIGN IN</h1>
+    
+        <label style="text-align: center;">Email Address:</label>
+        <input type="email" name="email" placeholder="Email_address" required></br>
+
+
+        <label style="text-align: center;">Password:</label>
+        <input type="password" name="password" minlength="6" placeholder="password*" required></br>
+        <button name="submit" type="submit" value="HTML">sign in</button>
+        </form>
+</body>
+</html>

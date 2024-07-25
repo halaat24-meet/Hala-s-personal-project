@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("https://us.123rf.com/450wm/noravector/noravector1808/noravector180800808/106825064-wrong-vector-illustrated-comic-book-style-phrase.jpg");
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    background-color: #ffffff; /* White background for content */
+    border: 1px solid #dcdcdc; /* Light grey border */
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    width: 80%;
+    max-width: 500px;
+}
+
+h1 {
+    color: red; /* Bootstrap red for a warning color */
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: royalblue; /* Bootstrap info color for a calm tone */
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+form {
+    margin: 10px 0;
+}
+
+button {
+    background-color:black; /* Bootstrap primary blue color */
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #025aa5; /* Darker blue on hover */
+    transform: scale(1.05);
+}
+</style>
+<body>
+    <div class="container">
+    <h1>WRONG ANSWER</h1>
+    <h3>It's okay, as long as you keep going, you'll keep getting better</h3>
+    <form method="POST" action="/quiz2">
+        <button name="submit" type="submit" value="HTML">Continue</button>
+    </form>
+
+    <form method="POST" action="/signout">
+        <button name="submit" type="submit" value="HTML">Sign out</button>
+    </form>
+    
+</body>
+</html>
